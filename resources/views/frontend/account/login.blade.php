@@ -1,9 +1,5 @@
 <x-FrontendLayout>
     <x-form action="/login" method="POST">
-        <div>
-            FUCK YOU I. THE ACTION IS TO /LOGIN
-        </div>
-
         <x-group label="Email" inline>
             <x-inputs.text name="email"/>
         </x-group>
