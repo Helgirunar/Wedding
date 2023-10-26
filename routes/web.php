@@ -31,4 +31,7 @@ Route::middleware(['web', 'auth'])->prefix('user')->group(function () {
     Route::get('/dashboard', '\App\Http\Controllers\Frontend\AccountController@loginForm')->name('user.dashboard');
 });
 
+//Guests
+Route::get('/wedding/{weddings}', '\App\Http\Controllers\Frontend\WeddingController@index');
+
 ?>
